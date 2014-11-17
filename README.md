@@ -1,9 +1,3 @@
-## has_many :through practice
+## has_many :through demo
 
-People have employments.  Organizations have employments.  But users just want
-to see
-
-* the people connected to an organization
-* the organizations connected to a person
-
-Use `has_many :through` to solve this problem.
+A demo app for has_many :through

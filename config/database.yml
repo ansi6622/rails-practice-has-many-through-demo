@@ -3,8 +3,8 @@ default: &default
 
 development:
   <<: *default
-  database: rails-practice-has-many-through-development
+  database: rails-practice-has-many-through-demo-development
 
 test:
   <<: *default
-  database: rails-practice-has-many-through-test
+  database: rails-practice-has-many-through-demo-test

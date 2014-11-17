@@ -1,15 +1,15 @@
-Person.delete_all
-Organization.delete_all
-Employment.delete_all
+Post.delete_all
+Tag.delete_all
+Tagging.delete_all
 
-people = 34.times.map{Person.create!(name: Faker::Name.name)}
-organizations = 27.times.map{Organization.create!(name: Faker::Company.name)}
+posts = 34.times.map{Post.create!(name: Faker::Company.bs)}
+tags = 27.times.map{Tag.create!(name: Faker::Hacker.adjective)}
 
-people.each do |person|
-  organizations.sample(rand(5)).each do |organization|
-    Employment.create!(
-      person_id: person.id,
-      organization_id: organization.id
+posts.each do |post|
+  tags.sample(rand(5)).each do |tag|
+    Tagging.create!(
+      post_id: post.id,
+      tag_id: tag.id
     )
   end
 end

@@ -1,5 +1,5 @@
 <div class="page-header">
-  <h1>People</h1>
+  <h1>Tags</h1>
 </div>
 
 <table class="table">
@@ -11,10 +11,10 @@
     </tr>
   </thead>
   <tbody>
-    <% @people.each do |person| %>
+    <% @tags.each do |tag| %>
       <tr>
         <td>
-          <%= link_to person.name, person_path(person) %>
+          <%= link_to tag.name, tag_path(tag) %>
         </td>
       </tr>
     <% end %>

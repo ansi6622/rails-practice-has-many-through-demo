@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: "people#index"
-  resources :people
-  resources :organizations
+  root to: "posts#index"
+  resources :posts
+  resources :tags
 end
